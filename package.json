@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "The Desktop Application for Imbricate",
   "scripts": {
+    "start:main": "electron NODE_OPTIONS=\"--import tsx\" main/index.ts",
     "clean": "rm -rf app",
     "test": "jest",
     "coverage": "jest --coverage",
