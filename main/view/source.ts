@@ -11,7 +11,7 @@ const sourceDevelopment: Record<VIEW_SOURCE, string> = {
     [VIEW_SOURCE.DATABASE]: "http://localhost:5711",
 };
 
-const rootPath = join(__dirname, "..");
+const rootPath = join(__dirname);
 
 const sourceProduction: Record<VIEW_SOURCE, string> = {
     [VIEW_SOURCE.DATABASE]: join(rootPath, "_renderer", "database", "index.html"),

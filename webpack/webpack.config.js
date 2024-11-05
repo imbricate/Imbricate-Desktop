@@ -1,5 +1,5 @@
 const path = require("path");
-const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
+const webpack = require("webpack");
 
 const BUILD_DIR = path.resolve(__dirname, "..", "build");
 const APP_DIR = path.resolve(__dirname, "..", "main");
@@ -18,13 +18,6 @@ const config = {
     },
     resolve: {
         extensions: [".ts"],
-        plugins: [
-            new TsconfigPathsPlugin(
-                {
-                    configFile: TSCONFIG_DIR,
-                },
-            ),
-        ],
     },
     module: {
         rules: [{
@@ -37,6 +30,11 @@ const config = {
             }],
         }],
     },
+    plugins: [
+        new webpack.DefinePlugin({
+            "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "IMBRICATE_PRODUCTION"),
+        }),
+    ],
 };
 
 module.exports = config;
