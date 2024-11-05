@@ -14,9 +14,6 @@ export const buildLicensePackageJson = async (rootPath: string) => {
         author: realPackageJson.author,
         license: realPackageJson.license,
         homepage: realPackageJson.homepage,
-        devDependencies: {
-            electron: realPackageJson.devDependencies.electron,
-        },
     };
 
     return JSON.stringify(licensePackageJson, null, 4);

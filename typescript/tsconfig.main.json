@@ -4,9 +4,8 @@
         "lib": [
             "esnext"
         ],
-        "outDir": "../build",
         "downlevelIteration": true,
-        "declaration": true,
+        "declaration": false,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "strict": true,
@@ -15,6 +14,6 @@
         "isolatedModules": true
     },
     "include": [
-        "../main/**/*.ts",
+        "../main/**/*.ts"
     ]
 }
