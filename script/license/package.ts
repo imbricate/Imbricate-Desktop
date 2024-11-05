@@ -2,6 +2,7 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 
 export const buildLicensePackageJson = async (rootPath: string) => {
+
     const realPackageJsonRaw = await readFile(join(rootPath, "package.json"), "utf-8");
     const realPackageJson = JSON.parse(realPackageJsonRaw);
 
@@ -13,8 +14,8 @@ export const buildLicensePackageJson = async (rootPath: string) => {
         author: realPackageJson.author,
         license: realPackageJson.license,
         homepage: realPackageJson.homepage,
-        dependencies: {
-            electron: realPackageJson.dependencies.electron,
+        devDependencies: {
+            electron: realPackageJson.devDependencies.electron,
         },
     };
 

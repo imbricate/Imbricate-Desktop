@@ -17,6 +17,11 @@ const rootPath: string = join(__dirname, "..");
             join(rootPath, "build", "package.json"),
             packageJsonRaw,
         );
+
+        await writeFile(
+            join(rootPath, "build", "yarn.lock"),
+            "",
+        );
     } catch (error) {
         console.error("[ERROR]", error);
     }
