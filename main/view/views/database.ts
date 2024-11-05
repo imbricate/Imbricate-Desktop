@@ -1,4 +1,5 @@
 import { BrowserWindow } from "electron";
+import { VIEW_SOURCE, loadSource } from "../source";
 
 export class DatabaseView {
 
@@ -6,7 +7,7 @@ export class DatabaseView {
 
     public static showView(): void {
         const window = this.getOrCreateWindow("database");
-        window.loadURL("http://localhost:5711");
+        loadSource(window, VIEW_SOURCE.DATABASE);
     }
 
     private static getOrCreateWindow(name: string): BrowserWindow {

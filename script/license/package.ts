@@ -8,7 +8,7 @@ export const buildLicensePackageJson = async (rootPath: string) => {
 
     const licensePackageJson = {
 
-        name: realPackageJson.name,
+        name: "imbricate",
         version: realPackageJson.version,
         description: realPackageJson.description,
         author: realPackageJson.author,

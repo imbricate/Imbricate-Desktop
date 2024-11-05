@@ -9,5 +9,6 @@ build({
     config: {
         appId: "io.imbricate.desktop",
         electronCompile: false,
+        productName: "Imbricate",
     },
 });
