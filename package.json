@@ -35,10 +35,6 @@
     "url": "https://github.com/Imbricate/Imbricate-Desktop/issues"
   },
   "homepage": "https://imbricate.io",
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
@@ -55,6 +51,8 @@
     "electron-builder": "^25.1.8",
     "eslint": "^9.14.0",
     "jest": "^29.7.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3",
