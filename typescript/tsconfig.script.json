@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": [
+            "ESNext"
+        ],
+        "downlevelIteration": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "isolatedModules": true
+    }
+}

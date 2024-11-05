@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "lib": [
+            "esnext"
+        ],
+        "outDir": "../build",
+        "downlevelIteration": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "isolatedModules": true
+    },
+    "include": [
+        "../main/**/*.ts",
+    ]
+}
