@@ -1,4 +1,4 @@
-import typescriptEslint, { rules } from "@typescript-eslint/eslint-plugin";
+import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import typescriptParser from "@typescript-eslint/parser";
 
 export default [
@@ -7,8 +7,8 @@ export default [
         languageOptions: {
             parser: typescriptParser,
             parserOptions: {
-                sourceType: "module"
-            }
+                sourceType: "module",
+            },
         },
     },
     {
@@ -59,6 +59,6 @@ export default [
                 "error",
                 "always",
             ],
-        }
-    }
-]
+        },
+    },
+];
